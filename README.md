@@ -1,11 +1,20 @@
 # Farmstead
 https://wp.w3layouts.com/farmstead/
-B1: Khai báo các file cần thêm vào local repository
-    git add [tên file] (thêm file cụ thể) hoặc git add . (thêm tất cả files)
-    git add -A (chỉ các file có chỉnh sửa)
-B2: git commit -m "noi dung chinh sua/them vao"
-B3: git pull >> để lấy code mới về trước khi đẩy cái mới lên
-B4: git push >> để đẩy code mới lên (git pull: để lấy code mới về trước khi đẩy cái mới lên)
-    **git push –u origin master** (chỉ nhập lần đầu dành cho người khởi tạo dự án master/main tùy máy)
 
-! Nếu xung đột khi push trao đổi để chọn file cuối cùng trước khi merge file
+- Cấu hình git cho user (khai báo 1 lần duy nhất)
+    git config --global user.name "usernam"
+    git config --global user.email "email"
+
+<!-- DÀNH CHO THÀNH VIÊN -->
+B1: Tạo thư mục local trên máy tính
+B2: git clone [đường dẫn trên github] >> sao chép dự án về thư mục local
+B3: git checkout -b branch-name: tạo nhánh
+
+<!-- TRONG QUÁ TRÌNH CODE VÀ PUSH CODE -->
+B1: Trước khi code hãy kéo tất cả thông tin mới nhất về bằng lệnh >> git pull
+B4: git add . >> Để thêm toàn bộ các file bị thay đổi.
+B5: git commit -m "noidungchinhsua" >>  Xác nhận và lưu trữ các file đã thay đổi
+B6: git push  >> đẩy tất cả commit từ local repository lên remote repository
+
+
+<!-- ! Nếu xung đột khi push trao đổi để chọn file cuối cùng trước khi merge file -->   
