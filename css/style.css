@@ -16,7 +16,7 @@ html,
 body {
     font-size: 17px;
     font-family: 'Source Sans Pro', sans-serif;
-
+    background-color: white;
 }
 
 .container {
@@ -39,6 +39,39 @@ p {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+h3 {
+    color: #fb811e;
+    font-size: 22px;
+}
+
+h2 {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.btn-orange {
+    color: white;
+    background-color: #fb811e;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 26px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: transparent;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+.btn-orange:hover {
+    background-color: #009f4d;
+}
 
 /* <!-- HEADER --> */
 
@@ -59,17 +92,8 @@ p {
 
 /* <!-- REASONS --> */
 
-.reasons__left h3 {
-    color: #fb811e;
-    font-size: 22px;
-}
 
-.reasons__left h2 {
-    color: black;
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
+
 
 .reasons__left p {
     margin-bottom: 70px;
@@ -118,7 +142,82 @@ p {
 
 /* <!-- /REASONS --> */
 
+/* <!-- ABOUT --> */
+.about {
+    margin-top: 50px;
+}
+
+.about__item {
+    padding-left: 90px;
+    margin-bottom: 100px;
+}
+
+.about__info img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.about__content h5 {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* <!-- /ABOUT --> */
+
+
+
 /* <!-- GALLERY --> */
+.gallery__img {
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery__img img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery__img::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    transition: all 0.75s;
+}
+
+.gallery__img:hover::before {
+    left: 125%;
+}
+
+
+.gallery__button {
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.gallery__button a {
+    text-decoration: none;
+}
+
+.gallery__button h5 {
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
 
 /* <!-- /GALLERY --> */
 
