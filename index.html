@@ -22,6 +22,9 @@
   integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<!-- FANCYBOX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 <!-- CSS STYLE -->
 <link rel="stylesheet" href="./css/style.css">
 
@@ -54,7 +57,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat.</p>
           <div class="row two-grid">
             <div class="reasons__left-item col-sm-6 d-flex ">
-              <i class="fa-solid fa-users mr-2"></i>
+              <!-- <i class="fa-solid fa-users mr-2"></i> -->
               <div class="reasons__left-detail">
                 <h4>
                   Qualified Staff
@@ -65,7 +68,7 @@
               </div>
             </div>
             <div class="reasons__left-item col-sm-6 d-flex ">
-              <i class="fa-regular fa-life-ring mr-2"></i>
+              <!-- <i class="fa-regular fa-life-ring mr-2"></i> -->
               <div class="reasons__left-detail">
                 <h4>
                   Excellent Service
@@ -90,8 +93,8 @@
   <!-- /REASONS -->
 
   <!-- ABOUT -->
-  <section class="about">
-    <div class="container">
+  <section class="about pt-5">
+    <div class="container pt-5">
       <div class="row">
         <div class="about__item col-lg-4 col-md-6 d-flex">
           <div class="about__info">
@@ -154,6 +157,76 @@
   <!-- /ABOUT -->
 
   <!-- GALLERY -->
+  <section class="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="gallery__content col-lg-3 col-6">
+          <h3>Gallery</h3>
+          <h2>Our Products</h2>
+          <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.</p>
+          <button class="btn-orange">
+            DISCOVER MORE
+          </button>
+        </div>
+        <div class="gallery__img col-lg-3 col-6 position-relative">
+          <a href="./img/g2.jpg" data-fancybox="gallery" data-caption="FreshCarrots">
+          <img src="./img/g2.jpg" alt="g2">
+          <div class="gallery__button p-2">
+              <h5 class="text-light">Fresh Carrots</h5>
+          </div>
+        </a>
+        </div>
+        <div class="gallery__img col-lg-3 col-6 position-relative">
+          <a href="./img/g3.jpg" data-fancybox="gallery" data-caption="Strawberry">
+          <img src="./img/g3.jpg" alt="Strawberry">
+          <div class="gallery__button p-2">
+              <h5 class="text-light">Strawberry</h5>
+          </div>
+        </a>
+        </div>
+        <div class="gallery__img col-lg-3 col-6 position-relative">
+          <a href="./img/g6.jpg" data-fancybox="gallery" data-caption="OurFarm">
+          <img src="./img/g6.jpg" alt="g6">
+          <div class="gallery__button p-2">
+              <h5 class="text-light">Our Farm</h5>
+          </div>
+        </a>
+        </div>
+        <div class="gallery__img col-lg-3 col-6 position-relative">
+          <a href="./img/g5.jpg" data-fancybox="gallery" data-caption="FreshApple">
+          <img src="./img/g5.jpg" alt="g5">
+          <div class="gallery__button p-2">
+              <h5 class="text-light">Fresh Apple</h5>
+          </div>
+        </a>
+        </div>
+        <div class="gallery__img col-lg-3 col-6 position-relative">
+          <a href="./img/g1.jpg" data-fancybox="gallery" data-caption="AwesomeFields">
+            <img src="./img/g1.jpg" alt="g1">
+            <div class="gallery__button p-2">
+              <h5 class="text-light">Awesome Fields</h5>
+            </div>
+          </a>
+        </div>
+        <div class="gallery__img col-lg-3 col-6 position-relative">
+          <a href="./img/g7.jpg" data-fancybox="gallery" data-caption="FreshGrapes">
+            <img src="./img/g7.jpg" alt="g7">
+            <div class="gallery__button p-2">
+              <h5 class="text-light">Fresh Grapes</h5>
+            </div>
+          </a>
+        </div>
+        <div class="gallery__img col-lg-3 col-6 position-relative">
+          <a href="./img/g8.jpg" data-fancybox="gallery" data-caption="HotPapper">
+            <img src="./img/g8.jpg" alt="g8">
+            <div class="gallery__button p-2">
+              <h5 class="text-light">Hot Papper</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- /GALLERY -->
@@ -182,6 +255,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <!-- FANCYBOX -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind("[data-fancybox]", {
+      // Your custom options
+    });
+  </script>
+
 </body>
 
 </html>
