@@ -67,6 +67,7 @@ h2 {
     border: transparent;
     border-radius: 30px;
     transition: all 0.5s;
+    outline: 0 !important;
 }
 
 .btn-orange:hover {
