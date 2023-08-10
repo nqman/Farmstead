@@ -68,12 +68,16 @@ h2 {
     border: transparent;
     border-radius: 30px;
     transition: all 0.5s;
-    outline: 0 !important;
 }
 
 .btn-orange:hover {
     background-color: #009f4d;
 }
+
+button:focus {
+    outline: none;
+}
+
 
 /* <!-- HEADER --> */
 
@@ -229,6 +233,7 @@ h2 {
     position: relative;
     overflow: hidden;
     margin-top: 150px;
+    margin-bottom: 200px;
 }
 
 .feedback::before {
@@ -242,19 +247,26 @@ h2 {
 }
 
 .feedback__item {
-    position: absolute;
-    z-index: 2;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
 }
 
 
-.feedback__info {
-    text-align: center;
+.owl-carousel .owl-item img {
+    display: inline;
 }
 
 .feedback__info img {
-    width: 90px;
-    height: 90px;
+    width: 90px !important;
+    height: 90px !important;
     border-radius: 50%;
+    margin-bottom: 20px;
 
 }
 
@@ -278,6 +290,8 @@ h2 {
     font-size: 22px;
     text-indent: 30px;
 }
+
+
 
 /* <!-- /FEEDBACK --> */
 

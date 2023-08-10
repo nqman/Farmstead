@@ -25,6 +25,10 @@
 <!-- FANCYBOX -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
+<!-- OWLCAROUSEL -->
+<link rel="stylesheet" href="./lib/owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="./lib/owlcarousel/owl.theme.default.min.css">
+
 <!-- CSS STYLE -->
 <link rel="stylesheet" href="./css/style.css">
 
@@ -233,26 +237,59 @@
   <!-- FEEDBACK -->
   <section class="feedback">
     <div class="container ">
-      <div class="feedback__item row align-items-center">
-        <div class="feedback__info col-md-3">
-          <img src="./img/testi1.jpg" alt="testi1">
-          <h6>Taylor Swift</h6>
-          <p>Customer</p>
+      <div class="owl-carousel owl-theme">
+        <div class="feedback__item row align-items-center">
+          <div class="feedback__info col-md-3 text-center">
+            <img src="./img/testi1.jpg" alt="testi1">
+            <h6>Taylor Swift</h6>
+            <p>Customer</p>
+          </div>
+          <div class="feedback__content col-md-9">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore delectus quibusdam dolorum nam aliquam
+              porro! Quos provident perspiciatis nostrum repellendus eligendi odit, repellat eum tempora dolores maxime
+              adipisci fuga suscipit eius, voluptatibus modi dolorum debitis accusamus saepe? Tempore nisi vitae et
+              saepe?
+              "</p>
+          </div>
         </div>
-        <div class="feedback__content col-md-9">
-          <i class="fa-solid fa-quote-left"></i>
-          <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore delectus quibusdam dolorum nam aliquam
-            porro! Quos provident perspiciatis nostrum repellendus eligendi odit, repellat eum tempora dolores maxime
-            adipisci fuga suscipit eius, voluptatibus modi dolorum debitis accusamus saepe? Tempore nisi vitae et saepe?
-            Aut ratione voluptatem cupiditate. Ab est eius amet? "</p>
+        <div class="feedback__item row align-items-center">
+          <div class="feedback__info col-md-3 text-center">
+            <img src="./img/testi2.jpg" alt="testi2">
+            <h6>Charlie Puth</h6>
+            <p>Customer</p>
+          </div>
+          <div class="feedback__content col-md-9">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore delectus quibusdam dolorum nam aliquam
+              porro! Quos provident perspiciatis nostrum repellendus eligendi odit, repellat eum tempora dolores maxime
+              adipisci fuga suscipit eius, voluptatibus modi dolorum debitis accusamus saepe? Tempore nisi vitae et
+              saepe?
+              "</p>
+          </div>
+        </div>
+        <div class="feedback__item row align-items-center">
+          <div class="feedback__info col-md-3 text-center">
+            <img src="./img/testi3.jpg" alt="testi3">
+            <h6>Selena Gomez</h6>
+            <p>Customer</p>
+          </div>
+          <div class="feedback__content col-md-9">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore delectus quibusdam dolorum nam aliquam
+              porro! Quos provident perspiciatis nostrum repellendus eligendi odit, repellat eum tempora dolores maxime
+              adipisci fuga suscipit eius, voluptatibus modi dolorum debitis accusamus saepe? Tempore nisi vitae et
+              saepe?
+              "</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- /FEEDBACK -->
 
   <!-- FOOTER -->
+
 
   <!-- /FOOTER -->
 
@@ -272,6 +309,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
   <!-- FANCYBOX -->
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script>
@@ -279,6 +317,35 @@
       // Your custom options
     });
   </script>
+
+  <!-- OWLCAROUSEL -->
+  <script src="./lib/owlcarousel/jquery.min.js"></script>
+  <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      responsiveClass: true,
+      autoplay: false,
+      autoplayTimeout: 5000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: false,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        1000: {
+          items: 1,
+          nav: false,
+          loop: false
+        }
+      }
+    })
+  </script>
+
 </body>
 
 </html>
