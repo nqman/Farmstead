@@ -78,6 +78,14 @@ button:focus {
     outline: none;
 }
 
+li {
+    list-style: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
 
 /* <!-- HEADER --> */
 
@@ -233,7 +241,7 @@ button:focus {
     position: relative;
     overflow: hidden;
     margin-top: 150px;
-    margin-bottom: 200px;
+    margin-bottom: 60px;
 }
 
 .feedback::before {
@@ -291,11 +299,20 @@ button:focus {
     text-indent: 30px;
 }
 
+.owl-theme .owl-dots .owl-dot span {
+    background: rgba(255, 255, 255, 0.3);
+}
 
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #fb811e;
+}
 
 /* <!-- /FEEDBACK --> */
 
 /* <!-- FOOTER --> */
+
+
 
 /* <!-- /FOOTER --> */
 
