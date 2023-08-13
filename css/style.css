@@ -311,13 +311,15 @@ a:hover {
 .owl-theme .owl-dots .owl-dot:hover span {
     background: #fb811e;
 }
+
 @media screen and (max-width: 991px) {
-    .feedback__content p  {
+    .feedback__content p {
         font-size: 17px;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .feedback__item  {
+    .feedback__item {
         padding-top: 50px;
     }
 }
@@ -325,7 +327,7 @@ a:hover {
 /* <!-- /FEEDBACK --> */
 
 /* <!-- FOOTER --> */
-footer{
+footer {
     padding-left: 50px;
 }
 
@@ -434,6 +436,7 @@ footer{
     background: rgb(255 201 69 / 19%);
     box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
+
 /* @media screen and (max-width: 992px) {
     .footer__left  {
         padding-left: 0px;
@@ -445,6 +448,7 @@ footer{
         margin-bottom: 30px;
     }
 }
+
 @media screen and (max-width: 992px) {
     .footer__right {
         margin-bottom: 50px;
@@ -454,5 +458,29 @@ footer{
 /* <!-- /FOOTER --> */
 
 /* <!-- BACKTOTOP --> */
+.backtotop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.backtotop:hover {
+    background-color: #33b271;
+}
+
+.backtotop i {
+    font-size: 13px;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
 
 /* <!-- /BACKTOTOP --> */
