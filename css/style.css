@@ -38,6 +38,7 @@ p {
     color: #707070;
     margin: 0;
     padding: 0;
+    line-height: 27px;
 }
 
 a {
@@ -99,9 +100,41 @@ a:hover {
 
 /* <!-- FEATURES --> */
 
+.features .container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.feature__left p {
+    margin-bottom: 20px;
+}
+
+.features__right {
+    margin-top: -20px;
+}
+
+.features__right img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 25px;
+}
+
+.features__right h4 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+    .features__right {
+        margin-top: 50px;
+    }
+}
+
 /* <!-- /FEATURES --> */
 
 /* <!-- SERVICES --> */
+
 .services {
     background-color: #009f4d;
 }
@@ -167,8 +200,6 @@ a:hover {
 }
 
 .services-card p {
-    color: #707070;
-    line-height: 27px;
     margin-bottom: 15px;
 }
 
@@ -185,7 +216,6 @@ a:hover {
         margin-top: 30px;
     }
 }
-
 
 /* <!-- /SERVICES --> */
 
