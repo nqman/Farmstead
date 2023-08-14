@@ -104,6 +104,9 @@ a:hover {
 /* <!-- SERVICES --> */
 .services {
     background-color: #009f4d;
+}
+
+.services .container {
     position: relative;
 }
 
@@ -113,11 +116,60 @@ a:hover {
     opacity: 0.15;
     color: white;
     text-align: center;
-    margin-top: -50px;
 }
-.services__title{
+
+.services__title {
     position: absolute;
-    top: 20px;
+    top: 35px;
+}
+
+.services__title h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.services__title h2 {
+    color: white;
+}
+
+.services__title p {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.services-card {
+    border-radius: 20px;
+}
+
+.services-card img {
+    border-radius: 20px 10px 0 0;
+}
+
+.services-card span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #009f4d;
+    background-color: rgba(0, 159, 77, 0.16);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.services-card h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+.services-card p {
+    color: #707070;
+    line-height: 27px;
+    margin-bottom: 15px;
 }
 
 
