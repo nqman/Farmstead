@@ -29,24 +29,63 @@
 <link rel="stylesheet" href="./lib/owlcarousel/owl.carousel.min.css">
 <link rel="stylesheet" href="./lib/owlcarousel/owl.theme.default.min.css">
 
+<!-- SLICK -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 <!-- CSS STYLE -->
 <link rel="stylesheet" href="./css/style.css">
 
 <body>
   <!-- HEADER -->
-  <br>
-  <br>
-  <br>
-  <br>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="logo">
+          <i class="fa-solid fa-leaf"></i>
+          <span>Farmstead</span>
+        </div>
+        <div class="header-icon">
+
+        </div>
+      </div>
+    </div>
+  </header>
   <!-- /HEADER -->
 
   <!-- BANNER -->
   <section class="banner">
-    <div class="container">
-      
+    <div class="row w-100">
+      <div class="banner__left pt-5 col-md-5 col-sm-12">
+        <h1>Farm</h1>
+        <h2>Welcome to Farmstead
+          where Natural Food is born!</h2>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        <button class="btn-orange">
+          LEARN MORE
+        </button>
+      </div>
+      <div class="banner__right col-md-7 col-sm-12">
+        <div class="banner-item1">
+          <div class="banner-text">
+            <h5>01/03</h5>
+            <p>Agriculture</p>
+          </div>
+        </div>
+        <div class="banner-item2">
+          <div class="banner-text">
+            <h5>02/03</h5>
+            <p>Farm Field</p>
+          </div>
+        </div>
+        <div class="banner-item3">
+          <div class="banner-text">
+            <h5>03/03</h5>
+            <p>Organic Farm</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-
   <!-- /BANNER -->
 
   <!-- FEATURES -->
@@ -84,7 +123,6 @@
       </div>
     </div>
   </section>
-
   <!-- /FEATURES -->
 
   <!-- SERVICES -->
@@ -135,7 +173,6 @@
       </div>
     </div>
   </section>
-
   <!-- /SERVICES -->
 
   <!-- REASONS -->
@@ -257,11 +294,9 @@
       </div>
     </div>
   </section>
-
   <!-- /ABOUT -->
 
   <!-- GALLERY -->
-
   <section class="gallery">
     <div class="container">
       <div class="row">
@@ -507,6 +542,24 @@
       }
     })
   </script>
+
+  <!-- SLICK -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.banner__right').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        arrows: false,
+      });
+    });
+  </script>
+
+
 
   <!-- BACKTOTOP -->
   <script src="./lib/backToTop/main.js"></script>
