@@ -89,7 +89,10 @@ a:hover {
 
 /* <!-- HEADER --> */
 header {
-    position: absolute;
+    display: fixed;
+    background-color: rgba(147, 57, 57, 0.199);
+    z-index: 100;
+    position: fixed;
 }
 
 header .logo {
@@ -109,6 +112,33 @@ header .logo i {
     left: 55px;
     color: #fb811e;
 }
+
+header .header-icon {
+    position: absolute;
+    right: 0;
+    z-index: 5;
+}
+
+.header-icon {}
+
+header .header-icon i {
+    margin-right: 15px;
+    font-size: 22px;
+    color: white;
+}
+
+header .header-icon i:first-child {
+    background-color: white;
+    color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
 
 /* <!-- /HEADER --> */
 
@@ -144,32 +174,38 @@ header .logo i {
 .banner__left p {
     font-size: 20px;
 }
-.banner__right{
-    right: 0;
-    margin-right: 0;
-    padding-right: 0;
+
+.banner__right {
+    margin: 0;
+    padding: 0;
+    right: -15px;
+
     /* ??? */
 }
+
 .banner__right .banner-item1 {
     overflow-x: hidden;
     background-image: url(../img/b1.jpg);
     height: 100vh;
-    border-radius: 0 0 0 20px;
-    position: relative;
+    border-radius: 0 0 0 50px;
 }
+
 .banner__right .banner-item2 {
     overflow-x: hidden;
     background-image: url(../img/b8.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     height: 100vh;
-    border-radius: 0 0 0 20px;
-    position: relative;
+    border-radius: 0 0 0 50px;
 }
+
 .banner__right .banner-item3 {
     overflow-x: hidden;
     background-image: url(../img/b4.jpg);
+    background-size: cover;
     height: 100vh;
-    border-radius: 0 0 0 20px;
-    position: relative;
+    border-radius: 0 0 0 50px;
 }
 
 .banner-text {
@@ -189,6 +225,34 @@ header .logo i {
 .banner-text p {
     color: white;
     text-align: right;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 0px !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-dots li {
+    display: inline;
+
+    content: none;
+
+}
+
+/* đổi màu button khi chuyển slide */
+
+.slick-dots li button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    content: none !important;
+    color: transparent;
+    background-color: white;
+    margin-right: 10px;
+    border: 1px transparent solid;
+
 }
 
 
