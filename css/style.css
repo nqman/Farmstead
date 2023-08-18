@@ -119,7 +119,7 @@ header .header_icon {
 }
 
 header .header_icon i {
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 22px;
     color: white;
     line-height: 22px;
@@ -136,21 +136,34 @@ header .header_icon i.fa-magnifying-glass {
     text-align: center;
 }
 
-header .menu {
-    position: absolute;
-    margin-top: 5px;
-    right: 11%;
-    opacity: 0;
-    overflow: hidden;
-    box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
-
+.navbar-nav {
+    position: relative;
 }
+
+.header_icon #moon {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.header_icon #light {
+    opacity: 0;
+}
+
+
+.nav-item i {
+    cursor: pointer;
+}
+
 
 .dropdown-menu {
     padding-left: 30px;
     padding-right: 30px;
     position: absolute;
     transform: translateX(-70%);
+    box-shadow: 0 20px 62px rgba(4, 20, 69, 0.1);
 }
 
 .dropdown-item {
@@ -168,36 +181,16 @@ header .menu {
     background-color: transparent;
 }
 
+header .header_icon i.fa-bars {
+    padding-top: 5px;
+    font-size: 30px;
+
+}
+
 .dropdown-toggle::after {
     display: none;
     overflow: hidden;
     padding: 0;
-}
-
-header .menu ul {
-    width: 230px;
-}
-
-header .menu li {
-    display: flex;
-    justify-content: center;
-    margin: 15px;
-}
-
-header .menu li:last-child {
-    margin-bottom: 0;
-}
-
-
-header .menu li a {
-    color: black;
-    font-weight: 600;
-    font-size: 16px;
-    transition: all 0.75s;
-}
-
-header .menu li a:hover {
-    color: #fb811e;
 }
 
 /* <!-- /HEADER --> */
@@ -243,8 +236,6 @@ header .menu li a:hover {
     right: -15px;
     border-radius: 0 0 0 20px;
     overflow: hidden;
-
-    /* ??? */
 }
 
 .banner__right .banner-item1::before {
@@ -302,9 +293,10 @@ header .menu li a:hover {
 
 .slick-dots {
     position: absolute;
-    bottom: 0px !important;
+    bottom: 15px !important;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 0;
 }
 
 .slick-dots li {

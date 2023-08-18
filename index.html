@@ -34,31 +34,33 @@
 
 <!-- CSS STYLE -->
 <link rel="stylesheet" href="./css/style.css">
+<!-- CSS STYLE DARK -->
+<link rel="stylesheet" href="./css/style_dark.css">
 
 
-<body class="dark">
+<body class="" id="body">
   <!-- HEADER -->
   <header class="w-100">
     <div class="container">
-      <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+      <nav class="navbar navbar-expand row">
         <!-- LOGO -->
-        <div class="header_logo">
+        <div class="header_logo col-6">
           <a class="navbar-brand" href="#">
             <i class="fa-solid fa-leaf"></i>
             <span>Farmstead</span>
           </a>
         </div>
         <!-- ICON -->
-        <div class="header_icon">
+        <div class="header_icon col-6 justify-content-end">
           <ul class="navbar-nav d-flex align-items-center">
             <li class="nav-item">
               <i class="fa-solid fa-magnifying-glass"></i>
             </li>
             <li class="nav-item">
-              <i class="fa-regular fa-sun"></i>
+              <i id="light" class="fa-regular fa-sun"></i>
             </li>
             <li class="nav-item">
-              <i class="fa-regular fa-moon"></i>
+              <i id="moon" class="fa-regular fa-moon"></i>
             </li>
             <!-- MENU -->
             <li class="nav-item dropdown">
