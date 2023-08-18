@@ -119,10 +119,10 @@ header .header_icon {
 }
 
 header .header_icon i {
-    margin-right: 20px;
     font-size: 22px;
     color: white;
     line-height: 22px;
+    margin-right: 20px;
 }
 
 header .header_icon i.fa-magnifying-glass {
@@ -134,22 +134,25 @@ header .header_icon i.fa-magnifying-glass {
     background-color: white;
     color: black;
     text-align: center;
-}
-
-.navbar-nav {
-    position: relative;
+    margin-right: 70px;
 }
 
 .header_icon #moon {
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 45%;
     transform: translate(-50%, -50%);
     opacity: 1;
+    padding: 5px;
 }
 
 .header_icon #light {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
     opacity: 0;
+    padding: 5px;
 }
 
 
@@ -157,12 +160,19 @@ header .header_icon i.fa-magnifying-glass {
     cursor: pointer;
 }
 
+.navbar-nav {
+    position: relative;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: 0;
+}
 
 .dropdown-menu {
     padding-left: 30px;
     padding-right: 30px;
     position: absolute;
-    transform: translateX(-70%);
+    transform: translateX(-85%);
     box-shadow: 0 20px 62px rgba(4, 20, 69, 0.1);
 }
 
