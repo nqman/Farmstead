@@ -35,21 +35,49 @@
 <!-- CSS STYLE -->
 <link rel="stylesheet" href="./css/style.css">
 
-<body>
+
+<body class="dark">
   <!-- HEADER -->
   <header class="w-100">
     <div class="container">
-      <div class="navbar pl-0 w-100">
-        <div class="logo">
-          <i class="fa-solid fa-leaf"></i>
-          <span>Farmstead</span>
+      <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+        <!-- LOGO -->
+        <div class="header_logo">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Farmstead</span>
+          </a>
         </div>
-        <div class="header-icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <i class="fa-regular fa-moon"></i>
-          <i class="fa-solid fa-bars"></i>
+        <!-- ICON -->
+        <div class="header_icon">
+          <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li class="nav-item">
+              <i class="fa-regular fa-sun"></i>
+            </li>
+            <li class="nav-item">
+              <i class="fa-regular fa-moon"></i>
+            </li>
+            <!-- MENU -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">HOME</a>
+                <a class="dropdown-item" href="#">ABOUT</a>
+                <a class="dropdown-item" href="#">SERVICES</a>
+                <a class="dropdown-item" href="#">BLOG POST</a>
+                <a class="dropdown-item" href="#">LANDING PAGE</a>
+                <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                <a class="dropdown-item" href="#">CONTACT</a>
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </div>
   </header>
   <!-- /HEADER -->
@@ -104,20 +132,20 @@
             DISCOVER MORE
           </button>
         </div>
-        <div class="features__right col-lg-6 col-md-12 row">
-          <div class="feature-item pb-5 mb-5 text-center col-lg-6 col-md-6">
+        <div class="features__right col-lg-6 col-md-12">
+          <div class="feature-item text-center">
             <img src="./img/img4.png" alt="img4">
             <h4>Natural Products</h4>
           </div>
-          <div class="feature-item pb-5 mb-5 text-center col-lg-6 col-md-6">
-            <img src="./img/img1.png" alt="img1">
-            <h4>Wheat Cultivation</h4>
-          </div>
-          <div class="feature-item mb-5 text-center col-lg-6 col-md-6">
+          <div class="feature-item text-center">
             <img src="./img/img2.png" alt="img2">
             <h4>Modern Truck</h4>
           </div>
-          <div class="feature-item mb-5 text-center col-lg-6 col-md-6">
+          <div class="feature-item text-center">
+            <img src="./img/img1.png" alt="img1">
+            <h4>Wheat Cultivation</h4>
+          </div>
+          <div class="feature-item text-center">
             <img src="./img/img3.png" alt="img3">
             <h4>Organic Products</h4>
           </div>
@@ -224,70 +252,70 @@
   <!-- /REASONS -->
 
   <!-- ABOUT -->
-  <section class="about pt-5">
-    <div class="container pt-5">
+  <section class="about pt-5 pb-5">
+    <div class="container pt-5 pb-5">
       <div class="row">
-        <div class="about__item p-2 col-lg-4 col-md-6 d-flex">
-          <div class="about__card  d-flex">
-            <div class="about__info">
+        <div class="about__item col-lg-4 col-md-6">
+          <div class="about__card  row">
+            <div class="about__info col-lg-3">
               <img src="./img/img5.png" alt="img5">
             </div>
-            <div class="about__content">
+            <div class="about__content col-lg-9">
               <h5>Agriculture</h5>
               <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
             </div>
           </div>
         </div>
-        <div class="about__item p-2 col-lg-4 col-md-6">
-          <div class="about__card  d-flex">
-            <div class="about__info">
+        <div class="about__item col-lg-4 col-md-6">
+          <div class="about__card row">
+            <div class="about__info col-lg-3">
               <img src="./img/img6.png" alt="img6">
             </div>
-            <div class="about__content">
+            <div class="about__content col-lg-9">
               <h5>Fresh</h5>
               <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
             </div>
           </div>
         </div>
-        <div class="about__item p-2 col-lg-4 col-md-6 d-flex">
-          <div class="about__card  d-flex">
-            <div class="about__info">
+        <div class="about__item col-lg-4 col-md-6">
+          <div class="about__card row">
+            <div class="about__info col-lg-3">
               <img src="./img/img7.png" alt="img7">
             </div>
-            <div class="about__content">
+            <div class="about__content col-lg-9">
               <h5>Natural</h5>
               <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
             </div>
           </div>
         </div>
-        <div class="about__item p-2 col-lg-4 col-md-6 d-flex">
-          <div class="about__card  d-flex">
-            <div class="about__info">
+        <div class="about__item col-lg-4 col-md-6">
+          <div class="about__card row">
+            <div class="about__info col-lg-3">
               <img src="./img/img8.png" alt="img8">
             </div>
-            <div class="about__content">
+            <div class="about__content col-lg-9">
               <h5>Farm</h5>
               <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
             </div>
           </div>
         </div>
-        <div class="about__item p-2 col-lg-4 col-md-6 d-flex">
-          <div class="about__card  d-flex">
-            <div class="about__info">
+        <div class="about__item col-lg-4 col-md-6">
+          <div class="about__card row">
+            <div class="about__info col-lg-3">
               <img src="./img/img9.png" alt="img9">
             </div>
-            <div class="about__content">
+            <div class="about__content col-lg-9">
               <h5>Organic</h5>
               <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
             </div>
           </div>
         </div>
-        <div class="about__item p-2 col-lg-4 col-md-6 d-flex">
-          <div class="about__card  d-flex">
-            <div class="about__info">
+        <div class="about__item col-lg-4 col-md-6">
+          <div class="about__card row">
+            <div class="about__info col-lg-3">
               <img src="./img/img10.png" alt="img10">
             </div>
-            <div class="about__content">
+            <div class="about__content col-lg-9">
               <h5>Dairy</h5>
               <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
             </div>
@@ -557,18 +585,19 @@
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
+        speed: 1000,
         dots: true,
         arrows: false,
       });
     });
   </script>
 
-
-
   <!-- BACKTOTOP -->
   <script src="./lib/backToTop/main.js"></script>
   <script src="./lib/backToTop/util.js"></script>
 
+  <!-- MAIN JS -->
+  <script src="./js/index.js"></script>
 
 </body>
 

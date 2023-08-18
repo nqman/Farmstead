@@ -1,5 +1,5 @@
-viền của ảnh slide
+
 khoảng cách với viền bên phải 180css
 
-còn phần hover vào fearture
+
 hover vào about bị xê dịch
