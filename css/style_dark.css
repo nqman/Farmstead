@@ -105,3 +105,7 @@ body.dark {
     color: white;
     transition: all 1s;
 }
+
+.dark .footer_social i {
+    background-color: rgba(10, 191, 83, 0.08);
+}
