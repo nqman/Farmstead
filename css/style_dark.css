@@ -1,6 +1,97 @@
+/* GLOBAL */
 html,
 body.dark {
     font-size: 17px;
     font-family: "Source Sans Pro", sans-serif;
-    background-color: black;
+    background-color: #222222;
+}
+
+.dark h2,
+.dark h4,
+.dark h5 {
+    color: white;
+}
+
+.dark h1 {
+    color: black;
+}
+
+.dark p {
+    color: #b7b7b7;
+}
+
+/* HEADER */
+.dark header .header_icon i {
+    color: white;
+}
+
+.dark header .header_icon i.fa-magnifying-glass {
+    color: black;
+}
+
+.dark .dropdown-item {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.75s;
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.dark .dropdown-menu {
+    background-color: #222222;
+}
+
+.dark .dropdown-item:hover {
+    color: #fb811e;
+}
+
+/* FEATURE */
+.dark .feature-item {
+    background-color: #222222;
+    /* box-shadow: 0 1rem 3rem rgba(233, 230, 230, 0.03); */
+}
+
+.dark .feature-item:hover {
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+/* SERVICES */
+.dark .services h1 {
+    color: white;
+}
+
+.dark .services__title p {
+    color: white;
+}
+
+.dark .services_info {
+    background-color: #222222;
+    border-radius: 0 0 20px 20px;
+}
+
+/* FEEDBACK */
+.dark .feedback__info p {
+    color: white;
+}
+
+.dark .feedback__content p {
+    color: white;
+}
+
+/* FOOTER */
+.dark .footer__left ul li a {
+    color: #b7b7b7;
+}
+
+.dark .footer_middle .logo:hover i {
+    color: white;
+    transition: all 1s;
+}
+
+.dark .footer_middle .logo:hover span {
+    color: white;
+    transition: all 1s;
 }

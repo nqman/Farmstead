@@ -84,7 +84,8 @@ a:hover {
 /* <!-- HEADER --> */
 
 header {
-    background-color: rgba(56, 55, 55, 0.199);
+    background-color: rgba(63, 58, 58, 0.7);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
     z-index: 100;
     position: fixed;
 }
@@ -104,9 +105,10 @@ header .header_logo span {
 
 header .header_logo i {
     position: absolute;
-    top: 0;
-    left: 55px;
+    top: 5px;
+    left: 70px;
     color: #fb811e;
+    font-size: 17px;
 }
 
 header .header_icon {
@@ -120,7 +122,7 @@ header .header_icon {
 
 header .header_icon i {
     font-size: 22px;
-    color: white;
+    color: black;
     line-height: 22px;
     margin-right: 20px;
 }
@@ -144,6 +146,15 @@ header .header_icon i.fa-magnifying-glass {
     transform: translate(-50%, -50%);
     opacity: 1;
     padding: 5px;
+    transition: all 0.5s;
+}
+
+.header_icon #moon:hover {
+    color: #fb811e;
+}
+
+.header_icon #light:hover {
+    color: #fb811e;
 }
 
 .header_icon #light {
@@ -153,6 +164,7 @@ header .header_icon i.fa-magnifying-glass {
     transform: translate(-50%, -50%);
     opacity: 0;
     padding: 5px;
+    transition: all 0.5s;
 }
 
 
@@ -483,6 +495,7 @@ header .header_icon i.fa-bars {
 
 .reasons__left h4 {
     font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .reasons__left i {
@@ -726,19 +739,13 @@ footer {
     margin-top: -15px;
     margin-bottom: 20px;
     position: relative;
-    cursor: pointer;
 }
 
-.footer_middle .logo:hover span {
-    color: black;
-    transition: all 1s;
-
-}
-
-.footer_middle .logo:hover i {
-    color: black;
-    transition: all 1s;
-
+.footer_middle .logo i {
+    position: absolute;
+    top: 0;
+    left: 57px;
+    color: #fb811e;
 }
 
 .footer_middle .logo span {
@@ -748,12 +755,17 @@ footer {
     font-family: "Volkhov", serif;
 }
 
-.footer_middle .logo i {
-    position: absolute;
-    top: 0;
-    left: 15%;
-    color: #fb811e;
+.footer_middle .logo a:hover i {
+    color: black;
+    transition: all 1s;
 }
+
+.footer_middle .logo a:hover span {
+    color: black;
+    transition: all 1s;
+}
+
+
 
 .footer_middle p {
     margin-bottom: 60px;
@@ -810,7 +822,7 @@ footer {
 }
 
 .footer_social {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .footer_social i {
