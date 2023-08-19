@@ -84,7 +84,7 @@ a:hover {
 /* <!-- HEADER --> */
 
 header {
-    background-color: rgba(63, 58, 58, 0.7);
+    background-color: rgba(245, 241, 241, 0.7);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
     z-index: 100;
     position: fixed;
@@ -94,6 +94,7 @@ header {
 
 header .header_logo {
     position: relative;
+    padding: 0;
 }
 
 header .header_logo span {
@@ -117,6 +118,7 @@ header .header_icon {
     z-index: 5;
     display: flex;
     align-items: center;
+    padding: 0;
 
 }
 
@@ -250,6 +252,7 @@ header .header_icon i.fa-bars {
 .banner__left p {
     font-size: 20px;
     margin-bottom: 25px;
+    margin-top: 30px;
 }
 
 .banner__right {
@@ -275,7 +278,6 @@ header .header_icon i.fa-bars {
     background-image: url(../img/b1.jpg);
     background-size: cover;
     height: 100vh;
-    border-radius: 0 0 0 20px;
 }
 
 .banner__right .banner-item2 {
@@ -283,7 +285,6 @@ header .header_icon i.fa-bars {
     background-image: url(../img/b8.jpg);
     background-size: cover;
     height: 100vh;
-    border-radius: 0 0 0 20px;
 }
 
 .banner__right .banner-item3 {
@@ -291,7 +292,6 @@ header .header_icon i.fa-bars {
     background-image: url(../img/b4.jpg);
     background-size: cover;
     height: 100vh;
-    border-radius: 0 0 0 20px;
 }
 
 .banner-text {
@@ -547,7 +547,7 @@ header .header_icon i.fa-bars {
     transition: all 0.5s;
     border-radius: 10px;
     cursor: pointer;
-    border: transparent;
+    border: 1px solid transparent;
 }
 
 .about__info img {
@@ -870,6 +870,7 @@ footer {
 
 .backtotop:hover {
     background-color: #33b271;
+    border-radius: 10px;
 }
 
 .backtotop i {

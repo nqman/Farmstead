@@ -21,6 +21,11 @@ body.dark {
 }
 
 /* HEADER */
+.dark header {
+    background-color: rgba(63, 58, 58, 0.7);
+
+}
+
 .dark header .header_icon i {
     color: white;
 }
@@ -72,6 +77,11 @@ body.dark {
     border-radius: 0 0 20px 20px;
 }
 
+/* ABOUT */
+.dark .about__card:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 /* FEEDBACK */
 .dark .feedback__info p {
     color: white;
@@ -86,12 +96,12 @@ body.dark {
     color: #b7b7b7;
 }
 
-.dark .footer_middle .logo:hover i {
+.dark .footer_middle a:hover i {
     color: white;
     transition: all 1s;
 }
 
-.dark .footer_middle .logo:hover span {
+.dark .footer_middle a:hover span {
     color: white;
     transition: all 1s;
 }
