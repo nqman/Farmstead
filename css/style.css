@@ -547,6 +547,11 @@ header .header_icon i.fa-bars {
         margin-top: 170px;
     }
 
+    .services__content #item3 {
+        transform: translateX(50%);
+        margin-top: 50px;
+    }
+
 }
 
 
@@ -618,7 +623,7 @@ header .header_icon i.fa-bars {
 
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .reasons .container {
         max-width: 740px;
     }
