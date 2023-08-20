@@ -1,8 +1,9 @@
 # Farmstead
-https://wp.w3layouts.com/farmstead/
+origin: https://wp.w3layouts.com/farmstead/
+vercel: https://farmstead-wm.vercel.app/
 
 - Cấu hình git cho user (khai báo 1 lần duy nhất)
-    git config --global user.name "usernam"
+    git config --global user.name "username"
     git config --global user.email "email"
 
 <!-- DÀNH CHO THÀNH VIÊN -->
