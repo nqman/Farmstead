@@ -22,11 +22,5 @@ light.onclick = function () {
 var clickMenu = document.getElementById("clickMenu");
 clickMenu.onclick = function () {
     var menu = document.getElementById("menu");
-    menu.style.opacity = 1;
-    if (menu.style.opacity = 1) {
-        clickMenu.onclick = function () {
-            var menu = document.getElementById("menu");
-            menu.style.opacity = 0;
-        }
-    }
+    menu.classList.toggle("opacity_1");
 }
