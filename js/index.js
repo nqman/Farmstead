@@ -18,3 +18,15 @@ light.onclick = function () {
     moon.style.opacity = 1;
     moon.style.zIndex = 10;
 }
+// VISIBLE MENU
+var clickMenu = document.getElementById("clickMenu");
+clickMenu.onclick = function () {
+    var menu = document.getElementById("menu");
+    menu.style.opacity = 1;
+    if (menu.style.opacity = 1) {
+        clickMenu.onclick = function () {
+            var menu = document.getElementById("menu");
+            menu.style.opacity = 0;
+        }
+    }
+}

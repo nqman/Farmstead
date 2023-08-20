@@ -34,21 +34,15 @@ body.dark {
     color: black;
 }
 
-.dark .dropdown-item {
+.dark .menu ul li a {
     color: white;
-    font-weight: 600;
-    font-size: 16px;
-    transition: all 0.75s;
-    text-align: center;
-    padding-top: 7px;
-    padding-bottom: 7px;
 }
 
-.dark .dropdown-menu {
+.dark .menu {
     background-color: #222222;
 }
 
-.dark .dropdown-item:hover {
+.dark .menu ul li a:hover {
     color: #fb811e;
 }
 
