@@ -46,10 +46,17 @@ body.dark {
     color: #fb811e;
 }
 
+.dark header .header_logo:hover span {
+    color: white;
+}
+
+.dark header .header_logo:hover i {
+    color: white;
+}
+
 /* FEATURE */
 .dark .feature-item {
     background-color: #222222;
-    /* box-shadow: 0 1rem 3rem rgba(233, 230, 230, 0.03); */
 }
 
 .dark .feature-item:hover {
