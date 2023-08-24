@@ -1,6 +1,7 @@
 # Farmstead
 origin: https://wp.w3layouts.com/farmstead/
 vercel: https://farmstead-wm.vercel.app/
+video demo: https://www.youtube.com/watch?v=R_X6Ft9gmRM&t=19s&ab_channel=WanMan
 
 - Cấu hình git cho user (khai báo 1 lần duy nhất)
     git config --global user.name "username"
